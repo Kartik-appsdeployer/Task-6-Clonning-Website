@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+
+/* CSS for NavBar section */
+nav{
+  display: flex;
+  height: 62px;
+  width: 100%;
+  background: rgb(237, 236, 236);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 98px 0 100px;
+  flex-wrap: wrap;
+}
+nav img{
+    width: 166px;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a:hover{
+    color: #44a4ab;;
+}
+nav ul li .contact{
+    background: #43cea2;
+    border-radius: 2rem;
+    color: white;
+    background: -webkit-linear-gradient(45deg,#43cea2 0%,#185a9d 100%);
+}
+nav ul li .contact:hover{
+    color: white;
+    font-weight: bold;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #fff;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+
+/* CSS for second section */
+
+.second-section{
+    height: 385px;
+    background: url(https://apexmoon.com/img/past-sales-bg2.jpg);
+}
+.second-section .center{
+    padding-top: 104px;
+    color: white;
+}
+.second-section .center span{
+    font-size: 12px;
+}
+.second-section .center .contactUs{
+    cursor: pointer;
+    background: #43cea2;
+    background: -webkit-linear-gradient(45deg,#43cea2 0%,#185a9d 100%);
+}
+
+/* .second-section .center .contactUs h3{
+    background: #43cea2;
+    border-radius: 2rem;
+    color: white;
+    padding: 5px;
+    background: -webkit-linear-gradient(45deg,#43cea2 0%,#185a9d 100%);
+} */
