@@ -19,11 +19,13 @@ nav{
 }
 nav img{
     width: 166px;
+    cursor: pointer;
 }
 nav ul{
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  margin-top: 13px;
 }
 nav ul li{
   margin: 0 5px;
@@ -60,7 +62,157 @@ nav .menu-btn i{
 input[type="checkbox"]{
   display: none;
 }
+/* CSS for second section */
+
+.second-section{
+  height: 385px;
+  background: url(https://apexmoon.com/img/past-sales-bg2.jpg);
+}
+.second-section .center{
+  padding-top: 104px;
+  color: white;
+}
+.second-section .center span{
+  font-size: 12px;
+}
+.second-section .center .contactUs{
+  cursor: pointer;
+  background: #43cea2;
+  background: -webkit-linear-gradient(45deg,#43cea2 0%,#185a9d 100%);
+}
+
+.second-section .center{
+text-align: center;
+}
+
+.second-section .center h3{
+background: #43cea2;
+  width: 100%;
+  padding-top: 7px;
+  padding-right: 13px;
+  padding-bottom: 7px;
+  padding-left: 13px;
+  border-radius: 2rem;
+  background: -webkit-linear-gradient(45deg,#43cea2 0%,#185a9d 100%);
+  margin-top: 20px;
+}
+
+/* Third Section CSS Styling */
+
+.third-section .row{
+  display: flex;
+  padding-left: 19rem;
+  padding-right: 19rem;
+  justify-content: space-between;
+}
+
+.container-flex{
+  background: rgb(237, 236, 236);
+}
+.container-flex .row .col{
+  padding: 2rem;
+  background: white;
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 24px;
+  border-radius: 2rem;
+}
+.container-flex .row .col h1{
+  padding-bottom: 21px;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.container-flex .row .col span{
+  background: white;
+  padding: 10px;
+  border: 1px solid #0a79a9;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 13px;
+  font-size: 13px;
+}
+.container-flex .row .col span:hover{
+  color: white;
+  background: #43cea2;
+  background: -webkit-linear-gradient(45deg,#43cea2 0%,#185a9d 100%);
+  border: none;
+}
+
+
+/* Forth section CSS Styling */
+
+.forth-section{
+  background: #43cea2;
+  background: -webkit-linear-gradient(45deg,#43cea2 0%,#185a9d 100%);
+  padding: 70px;
+  text-align: center;
+}
+.forth-section h4{
+  background: black;
+  padding: 10px;
+  border-radius: 2rem;
+  color: white;
+  width:fit-content;
+  margin-left: 523px;
+}
+.forth-section img{
+  margin-top: 50px;
+  width: 140px;
+}
+.last-section .sec{
+  display: flex;
+  justify-content: space-between;
+}
+.last-section .sec p:hover{
+  color: #43cea2;
+  cursor: pointer;
+}
+.last-section{
+  padding: 2rem;
+}
+.last-section .sec .sec1{
+  margin-left: -303px;
+}
+.last-section .sec .sec2{
+  margin-left: -12px;
+}
+.last-section .sec .sec3{
+  margin-left: 155px
+}
+.last-section .sec .sec4{
+  margin-left: -155px;
+}
+.footer{
+  background: #272d3b;
+  height: 24px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Media Queries */
+
 @media (max-width: 920px) {
+  .forth-section h4{
+    margin-left: 56px;
+    font-size: 12px;
+  }
+  .last-section .sec{
+    display: block;
+    text-align: center;
+  }
+  .last-section .sec .sec3{
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  .last-section .sec .sec4{
+    margin-left: 13px;
+  }
+  .last-section .sec .sec1, .sec2, .sec3, .sec4{
+    margin-left: 0px;
+  }
   nav .menu-btn i{
     display: block;
   }
@@ -69,7 +221,7 @@ input[type="checkbox"]{
   }
   nav ul{
     position: fixed;
-    top: 80px;
+    top: 48px;
     left: -100%;
     background: #fff;
     height: 100vh;
@@ -100,31 +252,8 @@ input[type="checkbox"]{
     background: none;
     color: cyan;
   }
+  .second-section .center h3{
+    font-size: 10px;
+  }
 }
 
-/* CSS for second section */
-
-.second-section{
-    height: 385px;
-    background: url(https://apexmoon.com/img/past-sales-bg2.jpg);
-}
-.second-section .center{
-    padding-top: 104px;
-    color: white;
-}
-.second-section .center span{
-    font-size: 12px;
-}
-.second-section .center .contactUs{
-    cursor: pointer;
-    background: #43cea2;
-    background: -webkit-linear-gradient(45deg,#43cea2 0%,#185a9d 100%);
-}
-
-/* .second-section .center .contactUs h3{
-    background: #43cea2;
-    border-radius: 2rem;
-    color: white;
-    padding: 5px;
-    background: -webkit-linear-gradient(45deg,#43cea2 0%,#185a9d 100%);
-} */
