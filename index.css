@@ -193,6 +193,11 @@ background: #43cea2;
 }
 
 /* Media Queries */
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
 
 @media (max-width: 920px) {
   .forth-section h4{
