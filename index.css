@@ -134,7 +134,7 @@ background: #43cea2;
 
 .container-flex .row .col span{
   background: white;
-  border: 1px solid #0a79a9;
+  border: 2px solid #0a79a9;
   border-radius: 2rem;
   cursor: pointer;
   font-weight: bold;
@@ -168,6 +168,7 @@ background: #43cea2;
   color: white;
   width: fit-content;
   margin-left: 542px;
+  margin-bottom: 45px;
 }
 .last-section .imgsec{
   text-align: center;
@@ -182,7 +183,11 @@ background: #43cea2;
   justify-content: space-between;
 }
 .last-section{
-  padding: 2rem;
+  padding: 0 30px;
+  background: url(https://apexmoon.com/img/footer-bg.png);
+  padding-top: 56px;
+  margin-top: -112px;
+  background-size: cover;
 }
 
 .last-section .sec ul{
@@ -195,6 +200,9 @@ background: #43cea2;
 .last-section .sec ul li:hover{
   color: #43cea2;
   cursor: pointer;
+}
+.last-section .sec ul li .fa{
+  font-size: 17px;
 }
 .last-section .sec ul li .fa:hover{
   color: #0077b5;
