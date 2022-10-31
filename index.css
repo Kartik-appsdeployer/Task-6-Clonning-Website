@@ -239,6 +239,9 @@ background: #43cea2;
     background: -webkit-linear-gradient(45deg,#43cea2 0%,#185a9d 100%);
     border: none;
   } */
+  .last-section{
+    background: none;
+  }
   .container-flex .COL{
     margin-left: -10px;
   }
@@ -250,6 +253,9 @@ background: #43cea2;
   .second-section .center{
     padding-left: 7px;
     padding-right: 7px;
+  }
+  .last-section .imgsec{
+    padding-top: 40px;
   }
   
   .second-section .center h3{
