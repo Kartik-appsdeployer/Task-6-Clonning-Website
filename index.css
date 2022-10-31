@@ -8,6 +8,7 @@
 
 /* CSS for NavBar section */
 nav{
+  position: fixed;
   display: flex;
   height: 62px;
   width: 100%;
@@ -54,7 +55,7 @@ nav ul li .contact:hover{
     font-weight: bold;
 }
 nav .menu-btn i{
-  color: #fff;
+  color: black;
   font-size: 22px;
   cursor: pointer;
   display: none;
@@ -73,12 +74,7 @@ input[type="checkbox"]{
   color: white;
 }
 .second-section .center span{
-  font-size: 12px;
-}
-.second-section .center .contactUs{
-  cursor: pointer;
-  background: #43cea2;
-  background: -webkit-linear-gradient(45deg,#43cea2 0%,#185a9d 100%);
+  font-size: 15px;
 }
 
 .second-section .center{
@@ -87,14 +83,17 @@ text-align: center;
 
 .second-section .center h3{
 background: #43cea2;
-  width: 100%;
-  padding-top: 7px;
-  padding-right: 13px;
-  padding-bottom: 7px;
-  padding-left: 13px;
+  width: fit-content;
+  padding-top: 9px;
+  padding-right: 19px;
+  padding-bottom: 9px;
+  padding-left: 19px;
   border-radius: 2rem;
   background: -webkit-linear-gradient(45deg,#43cea2 0%,#185a9d 100%);
   margin-top: 20px;
+  margin-left: 606px;
+  font-size: 15px;
+  cursor: pointer;
 }
 
 /* Third Section CSS Styling */
@@ -110,22 +109,31 @@ background: #43cea2;
   background: rgb(237, 236, 236);
 }
 .container-flex .row .col{
-  padding: 2rem;
   background: white;
   margin-right: 24px;
   margin-left: 24px;
   margin-bottom: 24px;
   border-radius: 2rem;
+  padding-top: 3.3rem;
+  padding-bottom: 3.3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.container-flex .COL{
+  width: fit-content;
+}
+.container-flex .COL .col{
+  padding-left: 5.5rem;
+  padding-right: 5.5rem;
 }
 .container-flex .row .col h1{
-  padding-bottom: 21px;
+  padding-bottom: 40px;
   font-size: 23px;
   font-weight: bold;
 }
 
 .container-flex .row .col span{
   background: white;
-  padding: 10px;
   border: 1px solid #0a79a9;
   border-radius: 2rem;
   cursor: pointer;
@@ -149,15 +157,23 @@ background: #43cea2;
   padding: 70px;
   text-align: center;
 }
+.forth-section p{
+  color: #fff;
+}
 .forth-section h4{
   background: black;
   padding: 10px;
+  font-size: 14px;
   border-radius: 2rem;
   color: white;
-  width:fit-content;
-  margin-left: 523px;
+  width: fit-content;
+  margin-left: 542px;
 }
-.forth-section img{
+.last-section .imgsec{
+  text-align: center;
+  padding-bottom: 70px;
+}
+.last-section .imgsec img{
   margin-top: 50px;
   width: 140px;
 }
@@ -165,25 +181,34 @@ background: #43cea2;
   display: flex;
   justify-content: space-between;
 }
-.last-section .sec p:hover{
-  color: #43cea2;
-  cursor: pointer;
-}
 .last-section{
   padding: 2rem;
 }
-.last-section .sec .sec1{
-  margin-left: -303px;
+
+.last-section .sec ul{
+  list-style: none;
 }
-.last-section .sec .sec2{
-  margin-left: -12px;
+.last-section .sec ul li{
+  padding-bottom: 10px;
+  font-size: 14px;
 }
-.last-section .sec .sec3{
-  margin-left: 155px
+.last-section .sec ul li:hover{
+  color: #43cea2;
+  cursor: pointer;
 }
-.last-section .sec .sec4{
-  margin-left: -155px;
+.last-section .sec ul li .fa:hover{
+  color: #0077b5;
 }
+.last-section .sec ul li .fa:hover{
+  color: #0077b5;
+}
+/* .last-section .sec .partners{
+  display: flex;
+  justify-content: space-between;
+}
+.last-section .sec .partners img{
+
+} */
 .footer{
   background: #272d3b;
   height: 24px;
@@ -200,6 +225,28 @@ background: #43cea2;
 }
 
 @media (max-width: 920px) {
+  /* .container-flex .row .col span:hover{
+    color: white;
+    background: #43cea2;
+    background: -webkit-linear-gradient(45deg,#43cea2 0%,#185a9d 100%);
+    border: none;
+  } */
+  .container-flex .COL{
+    margin-left: -10px;
+  }
+  .container-flex .COL .col{
+    padding-left: 79px;
+    padding-right: 77px;
+  }
+
+  .second-section .center{
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  
+  .second-section .center h3{
+    margin-left: 125px;
+  }
   .forth-section h4{
     margin-left: 56px;
     font-size: 12px;
@@ -239,8 +286,9 @@ background: #43cea2;
     left: 0;
   }
   nav ul li{
-    width: 100%;
-    margin: 40px 0;
+    width: 89%;
+    margin: 11px 0;
+
   }
   nav ul li a{
     width: 100%;
